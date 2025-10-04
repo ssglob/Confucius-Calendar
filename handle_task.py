@@ -47,7 +47,7 @@ def update_task(task):
             task["duration"] = int(new_duration)
         else:
             print("Invalid duration. Skipping duration update.")
-    else:
+    if choice not in ['1', '2', '3']:
         print("Inavlid choice. No updates made.")
         
     return task
