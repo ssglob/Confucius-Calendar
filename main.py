@@ -22,7 +22,8 @@ def main():
     action = input("What would you like to do to the task list? Enter the corresponding number.\n" +
                    "1. Add a task\n" +
                    "2. Update an existing task\n" +
-                   "3. Print tasks\n")
+                   "3. Print tasks\n" +
+                   "4. Remove a task")
     
     action = int(action)
 
@@ -37,6 +38,11 @@ def main():
     
     elif action == 3:
         print_tasks(tasklist)
+    
+    elif action == 4:
+        task = input("Enter task id: ")
+        task = int(task) - 1
+        del tasklist[task]
 
     serialize(tasklist)
 
