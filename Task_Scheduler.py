@@ -13,7 +13,7 @@ def insert_task(tasklist: list, task) -> list:
     3) return the same (sorted) list
     """
     tasklist.append(task)
-    tasklist.sort(key = lambda t: _d(t.date))
+    tasklist.sort(key = lambda t: _d(t.task_data["date"]))
     return tasklist
 
 def refresh_list(tasklist: list, updated_task) -> list:
