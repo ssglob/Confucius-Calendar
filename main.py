@@ -27,6 +27,9 @@ def main():
         new_task = create_task()
         insert_task(tasklist, new_task)
         
+    elif action == 2:
+        update_task()
+
     with p.open("w") as f:
         json.dump(tasklist, f)
 

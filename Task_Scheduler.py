@@ -4,6 +4,7 @@ Date_fmt = "%d-%m-%Y"
 def _d(s: str) -> datetime:
     #date string to datetime for sorting
     return datetime.strptime(s, Date_fmt)
+
 def insert_task(tasklist: list, task) -> list:
     """
     tasklist: list[Task]

@@ -15,4 +15,8 @@ def create_task():
 
     new_task = Task(task, parsed_date, duration)
 
-    return new_task
+    new_task = Task(task)
+
+
+def update_task(task):
+    task.date
