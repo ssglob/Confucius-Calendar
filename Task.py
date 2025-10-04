@@ -4,13 +4,13 @@ class Task:
         self.date = date
         self.duration = duration        
 
-    def update(self, task, dictionary):
+    def update(self, dictionary):
         if dictionary["task"]:
-            self.task = task.task
+            self.task = dictionary["task"]
         
         if dictionary["date"]:
-            self.date = task.date
+            self.date = dictionary["date"]
 
         if dictionary["duration"]:
-            self.duration = task.duration
+            self.duration = dictionary["duration"]
     
