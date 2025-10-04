@@ -1,8 +1,7 @@
-from Task import Task
 import json
 from datetime import datetime
 from pathlib import Path
-from handle_task import create_task
+from handle_task import create_task, update_task
 from Task_Scheduler import insert_task
 
 def main():

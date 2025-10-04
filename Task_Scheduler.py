@@ -14,7 +14,7 @@ def insert_task(tasklist: list, task) -> list:
     3) return the same (sorted) list
     """
     tasklist.append(task)
-    tasklist.sort(key = lambda t: t.task_data["date"])
+    tasklist.sort(key = lambda t: t["date"])
     return tasklist
 
 def refresh_list(tasklist: list, updated_task) -> list:
@@ -23,6 +23,6 @@ def refresh_list(tasklist: list, updated_task) -> list:
     task.update(date = '')
     resorted by due date and returned list
 """
-    tasklist.sort(key = lambda t: t.task_data["date"])
+    tasklist.sort(key = lambda t: t["date"])
     return tasklist
 # LLM stuff
