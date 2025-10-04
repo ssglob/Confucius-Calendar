@@ -23,6 +23,9 @@ def main():
     if action == 1:
         add_task()
         
+    elif action == 2:
+        update_task()
+
     with p.open("w") as f:
         json.dump(tasklist, f)
 

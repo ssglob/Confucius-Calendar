@@ -43,3 +43,7 @@ def add_task():
         parsed_date = parse_date(date, int(time))
 
     new_task = Task(task)
+
+
+def update_task(task):
+    task.date
