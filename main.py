@@ -1,8 +1,8 @@
 import json
 from datetime import datetime
 from pathlib import Path
-from handle_task import create_task, update_task
-from Task_Scheduler import insert_task
+from handle_task import create_task, update_task, serialize
+import Task_Scheduler
 
 def main():
     dir = Path('.')
@@ -15,6 +15,9 @@ def main():
             tasklist = json.load(f)
     except:
         tasklist = []
+    
+    for i in tasklist:
+        i["date"] = Task_Scheduler._d(i["date"])
 
     action = input("What would you like to do to the task list? Enter the corresponding number.\n"+
                    "1. Add a task\n" +
@@ -24,10 +27,12 @@ def main():
 
     if action == 1:
         new_task = create_task()
-        insert_task(tasklist, new_task)
+        Task_Scheduler.insert_task(tasklist, new_task)
         
     elif action == 2:
         update_task()
+
+    serialize(tasklist)
 
     with p.open("w") as f:
         json.dump(tasklist, f)

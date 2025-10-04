@@ -12,7 +12,7 @@ def create_task():
         duration = input("Enter how long this task will take (hours): ")
     duration = int(duration)
 
-    new_task = {"task": task, "date": date, "duration": duration}
+    new_task = {"task": task, "date": parsed_date, "duration": duration}
     return new_task
 
 
@@ -20,4 +20,12 @@ def update_task(task):
     task.date
 
 def print_tasks(tl):
-    pass
+    if (len(tl) == 0):
+        print("You have no tasks")
+        return
+    for i in range(len(tl)):
+        print(f"{i + 1}.\ttask: {tl[i]["task"]}\n\tdate: {tl[i]["date"]}\n\tduration: {tl[i]["duration"]}")
+
+def serialize(tl):
+    for i in tl:
+        i["date"] = i["date"].strftime("%d-%m-%Y")
