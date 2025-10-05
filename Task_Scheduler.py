@@ -29,7 +29,7 @@ def refresh_list(tasklist: list, updated_task) -> list:
 import json
 from gen_ai import generate_schedule
 
-def schedule_tasks(tasklist: list):
+def schedule_tasks(tasklist: list, schedule_file_path: str):
     """Generates a schedule using AI and saves it to a file."""
     print("Generating schedule with AI...")
     schedule_response = generate_schedule(tasklist)
@@ -42,7 +42,7 @@ def schedule_tasks(tasklist: list):
         if json_start != -1 and json_end != 0:
             schedule_json = schedule_response[json_start:json_end]
             schedule = json.loads(schedule_json)
-            with open("c:\\Users\\Taha\\Confucius-Calendar\\data\\schedule.json", "w") as f:
+            with open(schedule_file_path, "w") as f:
                 json.dump(schedule, f, indent=4)
             print("Schedule generated and saved to data/schedule.json")
         else:

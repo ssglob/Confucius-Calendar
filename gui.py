@@ -8,6 +8,18 @@ from tkcalendar import Calendar
 from PIL import Image, ImageTk
 from handle_task import get_task_duration
 import Task_Scheduler
+import sys
+import os
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 class App(tk.Tk):
     def __init__(self):
@@ -28,8 +40,10 @@ class App(tk.Tk):
             "He that would perfect his work must first sharpen his tools."
         ]
 
-        self.task_file = Path('.') / "data" / "tasklist.json"
-        self.schedule_file = Path('.') / "data" / "schedule.json"
+        app_data_dir = Path.home() / "Confucius-Calendar"
+        app_data_dir.mkdir(exist_ok=True)
+        self.task_file = app_data_dir / "tasklist.json"
+        self.schedule_file = app_data_dir / "schedule.json"
         
         container = tk.Frame(self)
         container.pack(side="top", fill="both", expand=True)
@@ -55,7 +69,7 @@ class StartPage(tk.Frame):
         self.controller = controller
 
         try:
-            self.bg_image = Image.open("background.jpg")
+            self.bg_image = Image.open(resource_path("background.jpg"))
             self.bg_image = self.bg_image.resize((1000, 800), Image.Resampling.LANCZOS)
             self.bg_photo = ImageTk.PhotoImage(self.bg_image)
             
@@ -299,7 +313,7 @@ class MainPage(tk.Frame):
             messagebox.showinfo("Success", "Task(s) removed successfully!")
 
     def generate_schedule_window(self):
-        Task_Scheduler.schedule_tasks(self.tasklist)
+        Task_Scheduler.schedule_tasks(self.tasklist, self.controller.schedule_file)
         self.load_schedule()
         self.update_calendar_events()
         messagebox.showinfo("Success", "Schedule generated and updated in the calendar.")
@@ -361,7 +375,7 @@ class MainPage(tk.Frame):
         popup.title("Confucius")
         
         try:
-            image = Image.open("confucius1.jpg")
+            image = Image.open(resource_path("confucius1.jpg"))
             photo = ImageTk.PhotoImage(image)
             
             label = ttk.Label(popup, image=photo)
