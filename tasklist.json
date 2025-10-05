@@ -8,5 +8,15 @@
         "task": "solve 200 math problems",
         "date": "15-10-2025",
         "duration": 50
+    },
+    {
+        "task": "10 page essay",
+        "date": "20-10-2025",
+        "duration": 45
+    },
+    {
+        "task": "water my plants",
+        "date": "10-11-2025",
+        "duration": 1
     }
 ]

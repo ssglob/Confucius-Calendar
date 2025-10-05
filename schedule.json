@@ -44,16 +44,6 @@
             "name": "hackathon create an app",
             "start_time": "17:00",
             "end_time": "19:00"
-        },
-        {
-            "name": "Break",
-            "start_time": "19:00",
-            "end_time": "19:15"
-        },
-        {
-            "name": "hackathon create an app",
-            "start_time": "19:15",
-            "end_time": "19:45"
         }
     ],
     "2025-09-29": [
@@ -101,16 +91,6 @@
             "name": "hackathon create an app",
             "start_time": "17:00",
             "end_time": "19:00"
-        },
-        {
-            "name": "Break",
-            "start_time": "19:00",
-            "end_time": "19:15"
-        },
-        {
-            "name": "hackathon create an app",
-            "start_time": "19:15",
-            "end_time": "19:45"
         }
     ],
     "2025-09-30": [
@@ -158,16 +138,6 @@
             "name": "hackathon create an app",
             "start_time": "17:00",
             "end_time": "19:00"
-        },
-        {
-            "name": "Break",
-            "start_time": "19:00",
-            "end_time": "19:15"
-        },
-        {
-            "name": "hackathon create an app",
-            "start_time": "19:15",
-            "end_time": "19:45"
         }
     ],
     "2025-10-01": [
@@ -215,16 +185,6 @@
             "name": "hackathon create an app",
             "start_time": "17:00",
             "end_time": "19:00"
-        },
-        {
-            "name": "Break",
-            "start_time": "19:00",
-            "end_time": "19:15"
-        },
-        {
-            "name": "hackathon create an app",
-            "start_time": "19:15",
-            "end_time": "19:45"
         }
     ],
     "2025-10-02": [
@@ -257,6 +217,11 @@
             "name": "Break",
             "start_time": "14:30",
             "end_time": "14:45"
+        },
+        {
+            "name": "hackathon create an app",
+            "start_time": "14:45",
+            "end_time": "16:45"
         }
     ],
     "2025-10-08": [
@@ -304,16 +269,6 @@
             "name": "solve 200 math problems",
             "start_time": "17:00",
             "end_time": "19:00"
-        },
-        {
-            "name": "Break",
-            "start_time": "19:00",
-            "end_time": "19:15"
-        },
-        {
-            "name": "solve 200 math problems",
-            "start_time": "19:15",
-            "end_time": "19:45"
         }
     ],
     "2025-10-09": [
@@ -361,16 +316,6 @@
             "name": "solve 200 math problems",
             "start_time": "17:00",
             "end_time": "19:00"
-        },
-        {
-            "name": "Break",
-            "start_time": "19:00",
-            "end_time": "19:15"
-        },
-        {
-            "name": "solve 200 math problems",
-            "start_time": "19:15",
-            "end_time": "19:45"
         }
     ],
     "2025-10-10": [
@@ -418,16 +363,6 @@
             "name": "solve 200 math problems",
             "start_time": "17:00",
             "end_time": "19:00"
-        },
-        {
-            "name": "Break",
-            "start_time": "19:00",
-            "end_time": "19:15"
-        },
-        {
-            "name": "solve 200 math problems",
-            "start_time": "19:15",
-            "end_time": "19:45"
         }
     ],
     "2025-10-11": [
@@ -475,16 +410,6 @@
             "name": "solve 200 math problems",
             "start_time": "17:00",
             "end_time": "19:00"
-        },
-        {
-            "name": "Break",
-            "start_time": "19:00",
-            "end_time": "19:15"
-        },
-        {
-            "name": "solve 200 math problems",
-            "start_time": "19:15",
-            "end_time": "19:45"
         }
     ],
     "2025-10-12": [
@@ -527,6 +452,233 @@
             "name": "Break",
             "start_time": "16:45",
             "end_time": "17:00"
+        },
+        {
+            "name": "solve 200 math problems",
+            "start_time": "17:00",
+            "end_time": "19:00"
+        }
+    ],
+    "2025-10-13": [
+        {
+            "name": "10 page essay",
+            "start_time": "08:00",
+            "end_time": "10:00"
+        },
+        {
+            "name": "Break",
+            "start_time": "10:00",
+            "end_time": "10:15"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "10:15",
+            "end_time": "12:15"
+        },
+        {
+            "name": "Break",
+            "start_time": "12:15",
+            "end_time": "12:30"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "12:30",
+            "end_time": "13:30"
+        }
+    ],
+    "2025-10-14": [
+        {
+            "name": "10 page essay",
+            "start_time": "08:00",
+            "end_time": "10:00"
+        },
+        {
+            "name": "Break",
+            "start_time": "10:00",
+            "end_time": "10:15"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "10:15",
+            "end_time": "12:15"
+        },
+        {
+            "name": "Break",
+            "start_time": "12:15",
+            "end_time": "12:30"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "12:30",
+            "end_time": "14:30"
+        },
+        {
+            "name": "Break",
+            "start_time": "14:30",
+            "end_time": "14:45"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "14:45",
+            "end_time": "16:45"
+        },
+        {
+            "name": "Break",
+            "start_time": "16:45",
+            "end_time": "17:00"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "17:00",
+            "end_time": "19:00"
+        }
+    ],
+    "2025-10-15": [
+        {
+            "name": "10 page essay",
+            "start_time": "08:00",
+            "end_time": "10:00"
+        },
+        {
+            "name": "Break",
+            "start_time": "10:00",
+            "end_time": "10:15"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "10:15",
+            "end_time": "12:15"
+        },
+        {
+            "name": "Break",
+            "start_time": "12:15",
+            "end_time": "12:30"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "12:30",
+            "end_time": "14:30"
+        },
+        {
+            "name": "Break",
+            "start_time": "14:30",
+            "end_time": "14:45"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "14:45",
+            "end_time": "16:45"
+        },
+        {
+            "name": "Break",
+            "start_time": "16:45",
+            "end_time": "17:00"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "17:00",
+            "end_time": "19:00"
+        }
+    ],
+    "2025-10-16": [
+        {
+            "name": "10 page essay",
+            "start_time": "08:00",
+            "end_time": "10:00"
+        },
+        {
+            "name": "Break",
+            "start_time": "10:00",
+            "end_time": "10:15"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "10:15",
+            "end_time": "12:15"
+        },
+        {
+            "name": "Break",
+            "start_time": "12:15",
+            "end_time": "12:30"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "12:30",
+            "end_time": "14:30"
+        },
+        {
+            "name": "Break",
+            "start_time": "14:30",
+            "end_time": "14:45"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "14:45",
+            "end_time": "16:45"
+        },
+        {
+            "name": "Break",
+            "start_time": "16:45",
+            "end_time": "17:00"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "17:00",
+            "end_time": "19:00"
+        }
+    ],
+    "2025-10-17": [
+        {
+            "name": "10 page essay",
+            "start_time": "08:00",
+            "end_time": "10:00"
+        },
+        {
+            "name": "Break",
+            "start_time": "10:00",
+            "end_time": "10:15"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "10:15",
+            "end_time": "12:15"
+        },
+        {
+            "name": "Break",
+            "start_time": "12:15",
+            "end_time": "12:30"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "12:30",
+            "end_time": "14:30"
+        },
+        {
+            "name": "Break",
+            "start_time": "14:30",
+            "end_time": "14:45"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "14:45",
+            "end_time": "16:45"
+        },
+        {
+            "name": "Break",
+            "start_time": "16:45",
+            "end_time": "17:00"
+        },
+        {
+            "name": "10 page essay",
+            "start_time": "17:00",
+            "end_time": "19:00"
+        }
+    ],
+    "2025-11-07": [
+        {
+            "name": "water my plants",
+            "start_time": "08:00",
+            "end_time": "09:00"
         }
     ]
 }
