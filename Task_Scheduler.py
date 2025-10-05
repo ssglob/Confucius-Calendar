@@ -32,19 +32,25 @@ from gen_ai import generate_schedule
 def schedule_tasks(tasklist: list):
     """Generates a schedule using AI and saves it to a file."""
     print("Generating schedule with AI...")
-    schedule_json = generate_schedule(tasklist)
-    
-    # Clean up the JSON string
-    schedule_json = schedule_json.strip("```json\n")
-    schedule_json = schedule_json.strip("\n```")
+    schedule_response = generate_schedule(tasklist)
     
     try:
-        schedule = json.loads(schedule_json)
-        with open("c:\\Users\\Taha\\Confucius-Calendar\\data\\schedule.json", "w") as f:
-            json.dump(schedule, f, indent=4)
-        print("Schedule generated and saved to data/schedule.json")
+        # Find the start and end of the JSON block
+        json_start = schedule_response.find('{')
+        json_end = schedule_response.rfind('}') + 1
+        
+        if json_start != -1 and json_end != 0:
+            schedule_json = schedule_response[json_start:json_end]
+            schedule = json.loads(schedule_json)
+            with open("c:\\Users\\Taha\\Confucius-Calendar\\data\\schedule.json", "w") as f:
+                json.dump(schedule, f, indent=4)
+            print("Schedule generated and saved to data/schedule.json")
+        else:
+            print("Error: Could not find a valid JSON block in the AI's response.")
+            print("Raw response:", schedule_response)
+
     except json.JSONDecodeError:
         print("Error: Could not decode the schedule from the AI.")
-        print("Raw response:", schedule_json)
+        print("Raw response:", schedule_response)
 
 # LLM stuff

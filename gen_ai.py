@@ -30,13 +30,16 @@ def generate_schedule(tasks):
     
     Generate a schedule for these tasks with the following considerations:
     1. Schedule tasks between 8:00 AM and 8:00 PM.
-    2. For every 2 hours of a task, add a 15-minute break.
+    2. For every 2 hours of a task, add a 15-minute break. Breaks should be explicitly listed.
     3. If a task's duration is long, spread it across multiple days before the due date.
-    4. Multiple tasks can be scheduled in one day if their total duration is not too long.
-    5. Ensure all parts of a task are scheduled before its due date.
+    4. Prioritize scheduling tasks as close to their due date as possible, but ensure they are completed before the due date.
+    5. Multiple tasks can be scheduled in one day if their total duration is not too long.
+    6. Ensure all parts of a task are scheduled before its due date.
+    7. Each task must be completed within 3 days before the deadline.
+    8. Each task should start within a month before the due date.
     
-    Provide the output as a JSON object where each key is a date (YYYY-MM-DD) and the value is a list of tasks for that day. 
-    Each task in the list should be a dictionary with 'task_name', 'start_time', and 'end_time'.
+    Provide the output as a JSON object where each key is a date (YYYY-MM-DD) and the value is a list of events for that day. 
+    Each event in the list should be a dictionary with 'name', 'start_time', and 'end_time'. For tasks, the name should be the task name. For breaks, the name should be 'Break'.
     """
     
     response = model.generate_content(prompt)
