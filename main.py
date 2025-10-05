@@ -23,7 +23,8 @@ def main():
                    "1. Add a task\n" +
                    "2. Update an existing task\n" +
                    "3. Print tasks\n" +
-                   "4. Remove a task")
+                   "4. Remove a task\n" +
+                   "5. Generate schedule")
     
     action = int(action)
 
@@ -43,6 +44,9 @@ def main():
         task = input("Enter task id: ")
         task = int(task) - 1
         del tasklist[task]
+
+    elif action == 5:
+        Task_Scheduler.schedule_tasks(tasklist)
 
     serialize(tasklist)
 

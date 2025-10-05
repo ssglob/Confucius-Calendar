@@ -25,4 +25,26 @@ def refresh_list(tasklist: list, updated_task) -> list:
 """
     tasklist.sort(key = lambda t: t["date"])
     return tasklist
+
+import json
+from gen_ai import generate_schedule
+
+def schedule_tasks(tasklist: list):
+    """Generates a schedule using AI and saves it to a file."""
+    print("Generating schedule with AI...")
+    schedule_json = generate_schedule(tasklist)
+    
+    # Clean up the JSON string
+    schedule_json = schedule_json.strip("```json\n")
+    schedule_json = schedule_json.strip("\n```")
+    
+    try:
+        schedule = json.loads(schedule_json)
+        with open("c:\\Users\\Taha\\Confucius-Calendar\\data\\schedule.json", "w") as f:
+            json.dump(schedule, f, indent=4)
+        print("Schedule generated and saved to data/schedule.json")
+    except json.JSONDecodeError:
+        print("Error: Could not decode the schedule from the AI.")
+        print("Raw response:", schedule_json)
+
 # LLM stuff
